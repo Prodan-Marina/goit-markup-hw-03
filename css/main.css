@@ -53,6 +53,15 @@
 }
 
 /* Преимущества */
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature-list .item {
+  width: 300px;
+  background-color: blueviolet;
+}
+
 .feature-list .link {
   margin-top: 0;
   margin-bottom: 30px;
@@ -91,7 +100,7 @@
 }
 
 /* Наша команда */
-.item {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -110,10 +119,30 @@
   font-size: 16px;
   line-height: 1.19;
 }
-.team {
-  background-color: var(--bg-grey-color);
-}
+
 .socials .link:hover,
 .socials .link:focus {
   background-color: var(--accent-color);
+}
+/* Стили для portfolio.html */
+.section-button {
+  margin-top: 0;
+  margin-bottom: 34px;
+  text-align: center;
+}
+.portfolio {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.portfolio .title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.portfolio .subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.portfolio .text {
+  margin-top: 0;
+  margin-left: 0;
 }

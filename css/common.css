@@ -25,6 +25,7 @@
   padding-right: 15px;
 }
 
+/* Утилиты*/
 .list {
   list-style: none;
   padding: 0;
@@ -35,6 +36,12 @@
   font-family: inherit;
   color: inherit;
 }
+/* Шапка*/
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* Логотип */
 .logo {
   color: var(--accent-color);
@@ -48,7 +55,20 @@
   color: var(--title-text-color);
 }
 /* Новигация */
+.site-nav {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 85px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -64,7 +84,14 @@
   color: var(--accent-color);
 }
 
-/* Контакты */
+/* Контакты  */
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+.contact-nav .item:not(:last-child) {
+  margin-right: 30px;
+}
 .contact-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -101,7 +128,9 @@
 .button.secondary:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  text-align: center;
 }
+
 /* Футер */
 .footer {
   color: var(--primary-white-color);
