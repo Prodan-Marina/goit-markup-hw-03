@@ -36,6 +36,10 @@
   font-family: inherit;
   color: inherit;
 }
+.image {
+  display: block;
+}
+
 /* Шапка*/
 .page-header {
   margin-top: auto;
