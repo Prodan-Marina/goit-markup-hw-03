@@ -15,11 +15,12 @@
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
 /* Контейнер */
 .container {
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid blueviolet;
+  /* outline: 2px solid blueviolet; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -113,6 +114,7 @@
 .contact-nav .link:focus {
   color: var(--accent-color);
 }
+
 /* Кнопки */
 .button {
   display: inline-block;
@@ -144,38 +146,81 @@
 
 /* Футер */
 .footer {
+  padding-top: 48px;
   color: var(--primary-white-color);
   background-color: var(--bg-dark-grey-color);
 }
-.footer .address {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.footer-content {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 28px;
 }
-.footer .contact {
+.address {
+  display: flex;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-right: 69px;
+  flex-direction: column;
+  align-items: baseline;
+
   color: var(--primary-text-color);
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-style: normal;
 }
+.geo {
+  margin-bottom: 9px;
+  color: var(--primary-white-color); 
+}
+.mail {
+  margin-bottom: 9px;
+  text-decoration: none;
+  color: inherit;
+}
+.contact {text-decoration: none;
+  color: inherit;}
+
 .subscription {
+  margin-top: auto;
+  margin-bottom: 21px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
 }
-.mail {
+.email {
   color: var(--footer-text-color);
   font-size: 16px;
   line-height: 1.87;
   display: flex;
   align-items: center;
-  letter-spacing: 0.03em;
 }
+.socials-netwok {
+  display: flex;
+}
+.socials-netwok .link {margin-top: auto;
+margin-left: auto;
+margin-right: 11px;}
+}
+.socials-netwok:nth-child(4n) {
+  margin-right: auto;}
+  
+.socials-netwok .link:hover,
+.socials-netwok .link:focus {
+  background-color: var(--accent-color);
+}
+.join {margin-right: 93px;
+align-items: baseline;}
+
 .copyright {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
   color: var(--footer-text-color);
   font-size: 12px;
   line-height: 2;
   text-align: center;
-  letter-spacing: 0.03em;
 }
